@@ -1,0 +1,4 @@
+awscli==1.27.89
+datasets
+transformers
+pandas
