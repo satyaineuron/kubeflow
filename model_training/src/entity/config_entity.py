@@ -15,3 +15,7 @@ class ModelTrainerConfig:
             timestamp,
             MODEL_TRAINING_DIR,
         )
+
+        self.model_trainer_model_file_path: str = os.path.join(
+            self.model_training_dir,MODEL_TRAINER_MODEL_FILE_PATH
+        )

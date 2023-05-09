@@ -10,21 +10,21 @@ class DataIngestionArtifact:
             timestamp,
             DATA_INGESTION_DIR_NAME,
             DATA_INGESTION_FEATURE_STORE_DIR,
-            TRAIN_FILE_NAME
+            TRAIN_DIR
         )
         self.test_file_path: str = os.path.join(
             ARTIFACT_DIR,
             timestamp,
             DATA_INGESTION_DIR_NAME,
             DATA_INGESTION_FEATURE_STORE_DIR,
-            TEST_FILE_NAME
+            TEST_DIR
         )
-        self.test_file_path: str = os.path.join(
+        self.valid_dir: str = os.path.join(
             ARTIFACT_DIR,
             timestamp,
             DATA_INGESTION_DIR_NAME,
             DATA_INGESTION_FEATURE_STORE_DIR,
-            VALID_FILE_NAME
+            VALID_DIR
         )
 
 class ModelTrainingArtifact:
