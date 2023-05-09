@@ -46,12 +46,9 @@ class DataIngestion:
                 
                 os.makedirs(self.data_ingestion_config.feature_store_dir, exist_ok=True)
 
-                train_df = pd.DataFrame(train_data)
-                train_df.to_csv(self.data_ingestion_config.training_file_path, index=False)
-                test_df = pd.DataFrame(test_data)
-                test_df.to_csv(self.data_ingestion_config.testing_file_path, index=False)
-                valid_df = pd.DataFrame(test_data)
-                valid_df.to_csv(self.data_ingestion_config.valid_file_path, index=False)
+                train_data.save_to_disk(self.data_ingestion_config.training_file_path)
+                test_data.save_to_disk(self.data_ingestion_config.testing_file_path)
+                valid_data.save_to_disk(self.data_ingestion_config.valid_file_path)
 
                 data_ingestion_artifact: DataIngestionArtifact = DataIngestionArtifact(
                 feature_store_file_path=self.data_ingestion_config.feature_store_dir

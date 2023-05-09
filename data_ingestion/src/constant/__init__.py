@@ -19,11 +19,11 @@ TEST_SIZE = 0.25
 
 DATA_INGESTION_FEATURE_STORE_DIR : str = 'feature_store'
 
-TRAIN_FILE_NAME: str = "train.csv"
+TRAIN_DIR: str = "train"
 
-TEST_FILE_NAME: str = "test.csv"
+TEST_DIR: str = "test"
 
-VALID_FILE_NAME: str = "valid.csv"
+VALID_DIR: str = "valid"
 
 config = BertConfig.from_pretrained(MODEL_NAME)
 bert = transformers.AutoModel.from_pretrained(MODEL_NAME, config=config)

@@ -132,5 +132,7 @@ logs
 model
 .vscode
 data
-ingestion
+data_ingestion/ingestion
+data_ingestion/artifacts
 artifacts
+ingestion

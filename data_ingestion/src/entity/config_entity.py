@@ -22,15 +22,15 @@ class DataIngestionConfig:
         
         self.training_file_path: str = os.path.join(
             self.feature_store_dir,
-            TRAIN_FILE_NAME,
+            TRAIN_DIR,
         )
 
         self.testing_file_path: str = os.path.join(
             self.feature_store_dir,
-            TEST_FILE_NAME,
+            TEST_DIR,
         )
 
         self.valid_file_path: str = os.path.join(
             self.feature_store_dir,
-            VALID_FILE_NAME,
+            VALID_DIR,
         )
