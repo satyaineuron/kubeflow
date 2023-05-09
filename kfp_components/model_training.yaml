@@ -1,0 +1,5 @@
+name: Imdb Model Trainer
+implementation:
+  container:
+    image: 566373416292.dkr.ecr.ap-south-1.amazonaws.com/imdb_model_training:latest
+    command: ["python3", "run.py"]

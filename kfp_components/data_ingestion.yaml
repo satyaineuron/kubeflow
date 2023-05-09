@@ -1,0 +1,5 @@
+name: Imdb Data Ingestion
+implementation:
+  container:
+    image: 566373416292.dkr.ecr.ap-south-1.amazonaws.com/imdb_data_ingestion
+    command: ["python3", "run.py"]
